@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 .font-open-sans {
   font-family: "Open Sans", sans-serif;
@@ -10,13 +11,13 @@
 }
 
 header{
-    background-color: #FFF8F3;
-    background: url(../images/developer.png), url(../images/header_bg.png), #FFF8F3;
-    background-repeat: no-repeat;
-    padding-top: 50px;
-    background-position: top left, bottom right;
-
+  background-color: #FFF8F3;
+  background-image: url("../images/developer.png"), url("../images/header_bg.png");
+  background-repeat: no-repeat;
+  background-position: top left, bottom right;
+  padding-top: 50px;
 }
+
 
 nav{
     width: 71%;
