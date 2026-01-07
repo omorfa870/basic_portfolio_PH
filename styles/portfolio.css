@@ -10,6 +10,26 @@
   
 }
 
+.section-heading{
+    max-width: 827px;
+    text-align: center;
+}
+
+
+.section-heading h2{
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    font-size: 30px;
+}
+
+.section-heading p{
+    font-size: 18px;
+    margin-bottom: 30px;
+    line-height: 30px;
+    color: #757575;
+
+}
+
 header{
   background-color: #FFF8F3;
   background-image: url("../images/developer.png"), url("../images/header_bg.png");
@@ -103,4 +123,34 @@ nav{
     max-width: 585;
     vertical-align: middle;
 
+}
+
+#about{
+    padding-top: 130px;
+}
+
+#about .about-container{
+    width: 71%;
+    max-width: 1140px;
+    margin: 0px auto;
+    text-align: center;
+    background-color: #FFF8F3;
+    padding: 131px 156px;
+
+}
+
+
+#about .about-container .about-info{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding-top: 30px;
+
+}
+
+.about-info .info-card{
+    font-size: 15px;
+    color: black;
+    line-height: 30px;
+    text-align: center;
 }
