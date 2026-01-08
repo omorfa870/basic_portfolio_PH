@@ -1,22 +1,23 @@
+/* ===== FULL CSS (COPY + PASTE) ===== */
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
-}
-.font-open-sans {
-  font-family: "Open Sans", sans-serif;
-  font-optical-sizing: auto;
-  
 }
 
+.font-open-sans {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+}
+
+/* ---------- Common Section Heading ---------- */
 .section-heading{
     max-width: 827px;
     text-align: center;
-    margin: 0px auto;
+    margin: 0 auto;
     padding-top: 130px;
 }
-
 
 .section-heading h2{
     margin-bottom: 30px;
@@ -26,37 +27,34 @@
 
 .section-heading p{
     font-size: 18px;
-    margin-bottom: 30px;
     line-height: 30px;
     color: #757575;
-    margin: 0px auto;
-
+    margin: 0 auto;
 }
 
+/* ---------- Header ---------- */
 header{
-  background-color: #FFF8F3;
-  background-image: url("../images/developer.png"), url("../images/header_bg.png");
-  background-repeat: no-repeat;
-  background-position: 23px 1px, bottom right;
-  padding-top: 50px;
+    background-color: #FFF8F3;
+    background-image: url("../images/developer.png"), url("../images/header_bg.png");
+    background-repeat: no-repeat;
+    background-position: 23px 1px, bottom right;
+    padding-top: 50px;
 }
 
-
+/* ---------- Navbar ---------- */
 nav{
     width: 71%;
     max-width: 1140px;
-    /* border: 1px solid red; */
-    margin: 0px auto;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    
 }
 
 .logo h2{
     font-size: 45px;
     font-weight: 900;
-
 }
+
 .color-orange{
     color: #FD6E0A;
 }
@@ -66,11 +64,14 @@ nav{
     gap: 51px;
     align-items: center;
     list-style: none;
-    color: black;
-    text-decoration: none;
-
 }
 
+.menu a{
+    text-decoration: none;
+    color: black;
+}
+
+/* ---------- Buttons ---------- */
 .btn{
     background-color: #FD6E0A;
     color: white;
@@ -80,54 +81,56 @@ nav{
     cursor: pointer;
 }
 
+/* ---------- Banner (FIXED) ---------- */
 #banner{
-    /* border: 1px solid blue; */
+    width: 71%;
+    max-width: 1140px;
     margin: 47px auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;  /* important */
     align-items: center;
+    gap: 40px;
 }
 
 #banner .banner-content{
-    /* border: 1px solid red; */
     max-width: 585px;
-    
-
 }
 
 #banner .banner-content h2{
-    /* border: 1px solid red; */
     font-size: 45px;
     font-weight: 600;
     color: #474747;
     margin-bottom: 5px;
-
 }
 
 #banner .banner-content h1{
-    /* border: 1px solid red; */
     font-size: 85px;
     font-weight: bold;
     color: #181818;
     margin-bottom: 20px;
-    
 }
 
 #banner .banner-content p{
-    /* border: 1px solid red; */
     font-size: 18px;
     color: #757575;
     line-height: 30px;
-    margin-bottom: 20px;  
+    margin-bottom: 20px;
+}
 
+#banner .banner-image{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;       /* pushes image to right */
 }
 
 #banner .banner-image img{
     max-width: 585px;
-    vertical-align: middle;
-
+    height: auto;
+    display: block;
+    float: none;                     /* IMPORTANT: no float in flex */
 }
 
+/* ---------- About ---------- */
 #about{
     padding-top: 130px;
 }
@@ -135,20 +138,17 @@ nav{
 #about .about-container{
     width: 71%;
     max-width: 1140px;
-    margin: 0px auto;
+    margin: 0 auto;
     text-align: center;
     background-color: #FFF8F3;
     padding: 131px 156px;
-
 }
-
 
 #about .about-container .about-info{
     display: flex;
     justify-content: space-between;
     gap: 30px;
     padding-top: 30px;
-
 }
 
 .about-info .info-card{
@@ -160,40 +160,40 @@ nav{
 
 #about .about-container .about-info .info-card h4{
     font-size: 12px;
-
 }
 
+/* ---------- Skills ---------- */
 #skills{
-  padding-top: 130px;
+    padding-top: 130px;
 }
 
 #skills .skills-container{
-  width: 71%;
-  max-width: 1140px;
-  margin: 0 auto;
+    width: 71%;
+    max-width: 1140px;
+    margin: 0 auto;
 }
 
 #skills .section-heading{
-  margin: 0 auto;
-  text-align: center;
-  max-width: 827px;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 827px;
+    padding-top: 0; /* so it doesn't double add space inside skills */
 }
 
 #skills .skill-box{
-  display: flex;
-  gap: 24px;
-  justify-content: space-between;
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
 }
 
 #skills .skill-card{
     padding: 30px;
     max-width: 267px;
-    /* border: 1px solid red; */
     box-shadow: 0 6px 50px 0 #00000031;
 }
 
 .skill-card img{
-    max-width: 44px ;
+    max-width: 44px;
     margin-bottom: 30px;
 }
 
@@ -208,12 +208,11 @@ nav{
     line-height: 26px;
     color: #757575;
     max-width: 204px;
-    max-height: 243px;
 }
 
+/* ---------- Resume ---------- */
 #resume{
     padding-top: 130px;
-
 }
 
 #resume .resume-container{
@@ -225,11 +224,12 @@ nav{
     gap: 20px;
 }
 
-.resume-container .section-title{
+/* Your HTML has: class="section title" (two classes: section + title)
+   So style .title instead of .section-title */
+.resume-container .title{
     color: #474747;
     font-size: 30px;
     margin-bottom: 30px;
-
 }
 
 .resume-container hr{
@@ -237,52 +237,50 @@ nav{
 }
 
 .resume-card{
-    /* border: 1px solid red; */
     max-width: 540px;
     margin-right: 47px;
 }
 
-.resume-card .card-title{
+/* Your HTML has class="resume-card-title", not "card-title" */
+.resume-card .resume-card-title{
     font-size: 25px;
     color: #474747;
     margin-bottom: 10px;
     font-weight: bold;
-
 }
+
 .resume-card .card-info{
     font-size: 20px;
     color: #757575;
     margin-bottom: 20px;
     font-weight: 600;
-
 }
+
 .resume-card .card-text{
     font-size: 16px;
     line-height: 28px;
     color: #757575;
-
-
 }
 
 .text-center{
     text-align: center;
 }
 
+/* ---------- Footer ---------- */
 footer{
     margin-top: 130px;
     background-color: #FFF8F3;
     padding: 130px 0;
-
-
 }
 
 .footer-container{
     width: 71%;
     max-width: 1140px;
-    margin: 0px auto;
+    margin: 0 auto;
     display: flex;
     gap: 116px;
-
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
 footer .footer-container .social{
@@ -304,10 +302,10 @@ footer .footer-container .social p{
 
 .footer-container .icons a{
     margin-right: 24px;
-
 }
 
-.footer-container form input[type="text"], .footer-container form textarea{
+.footer-container form input[type="text"],
+.footer-container form textarea{
     width: 461px;
     padding: 18px 31px;
     margin-bottom: 24px;
